@@ -1,36 +1,40 @@
 
 
-🚗 Lane and Car Detection
-📌 Overview
+# 🚗 Lane and Car Detection  
 
-This project implements a computer vision system capable of detecting and tracking both lane lines and vehicles on the road in real time using Python and OpenCV.
-It applies a combination of image processing, edge detection, Hough Transform, and machine learning models (HOG + SVM / YOLO) to process dash-cam video footage.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)  
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)  
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)  
 
-🎯 Goals
+---
 
-Detect lane lines using image processing techniques.
+## 📌 Overview  
+This project implements a computer vision system capable of **detecting and tracking both lane lines and vehicles on the road in real time** using Python and OpenCV.  
 
-Detect and track vehicles using object detection algorithms.
+It applies a combination of **image processing, edge detection, Hough Transform, and machine learning models (HOG + SVM / YOLO)** to process dash-cam video footage.  
 
-Ensure detection under varying lighting and road conditions.
+---
 
-Integrate lane and vehicle detection into a real-time pipeline.
+## 🎯 Goals  
+- ✅ Detect lane lines using image processing techniques.  
+- ✅ Detect and track vehicles using object detection algorithms.  
+- ✅ Ensure detection under varying lighting and road conditions.  
+- ✅ Integrate lane and vehicle detection into a real-time pipeline.  
 
-🛠️ Technologies Used
+---
 
-Python – Core programming language
+## 🛠️ Technologies Used  
+- **Python** – Core programming language  
+- **OpenCV** – Image processing and video analysis  
+- **NumPy & Matplotlib** – Numerical operations & visualization  
+- **scikit-image / scikit-learn** – Feature extraction & classification (HOG, SVM)  
+- **MoviePy** – Video processing  
+- **TensorFlow / YOLO (optional)** – Deep learning-based vehicle detection  
 
-OpenCV – Image processing and video analysis
+---
 
-NumPy & Matplotlib – Numerical operations & visualization
-
-scikit-image / scikit-learn – Feature extraction & classification (HOG, SVM)
-
-MoviePy – Video processing
-
-TensorFlow / YOLO (optional) – Deep learning-based vehicle detection
-
-📂 Project Structure
+## 📂 Project Structure  
+```bash
 CarAndLaneDetection/
 │── data/                 # Input videos, test images, datasets
 │── outputs/              # Results (processed videos/images)
@@ -41,49 +45,46 @@ CarAndLaneDetection/
 │── models/               # Trained/Pre-trained models
 │── requirements.txt      # Dependencies
 │── README.md             # Documentation
-
 ⚙️ Installation
-
 Clone the repository:
 
+bash
+Copy code
 git clone https://github.com/username/CarAndLaneDetection.git
 cd CarAndLaneDetection
-
-
 Create a virtual environment (recommended):
 
+bash
+Copy code
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
-
-
 Install dependencies:
 
+bash
+Copy code
 pip install -r requirements.txt
-
 ▶️ Usage
-Lane Detection
+Run Lane Detection
+bash
+Copy code
 python src/lane_detection.py --input data/solidWhiteRight.mp4 --output outputs/lane_detected.mp4
-
-Car Detection
+Run Car Detection
+bash
+Copy code
 python src/car_detection.py --input data/project_video.mp4 --output outputs/cars_detected.mp4
-
-Combined Lane + Car Detection
+Run Combined Lane + Car Detection
+bash
+Copy code
 python src/pipeline.py --input data/challenge.mp4 --output outputs/final_output.mp4
-
 📊 Results
-
 Lane Detection Example
-
 
 Car Detection Example
 
-
 Combined Detection (Cars + Lanes)
 
-
 🚀 Challenges & Solutions
-
 Lighting Variations: Used adaptive thresholding and dynamic parameter tuning.
 
 Curved / Occluded Roads: Improved Hough Transform + refined lane averaging.
@@ -91,7 +92,6 @@ Curved / Occluded Roads: Improved Hough Transform + refined lane averaging.
 Video Jitter / Fast Vehicles: Applied smoothing and temporal tracking.
 
 ✅ Results & Conclusion
-
 Robust lane and vehicle detection across multiple test videos.
 
 Achieved ~99% accuracy on trained SVM vehicle classifier.
@@ -99,18 +99,14 @@ Achieved ~99% accuracy on trained SVM vehicle classifier.
 Demonstrates potential use in ADAS (Advanced Driver Assistance Systems) and autonomous driving.
 
 📚 References
-
-OpenCV Docs: https://docs.opencv.org/
+OpenCV Documentation
 
 Udacity Self-Driving Car Nanodegree Resources
 
-YOLO Object Detection: https://pjreddie.com/darknet/yolo/
+YOLO Object Detection
 
 👨‍💻 Authors
-
 Siddharth Kanojiya
-
-Jai Mehta
 
 Link to Bootcamp notebook: https://colab.research.google.com/drive/1mASkzVB-dkqhLGeNVEBkYULWtgQRrBbu?usp=sharing
 
