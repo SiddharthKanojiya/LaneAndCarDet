@@ -49,21 +49,10 @@ CarAndLaneDetection/
 Clone the repository:
 
 bash
-Copy code
-git clone https://github.com/username/CarAndLaneDetection.git
+
+git clone https://github.com/SiddharthKanojiya/CarAndLaneDetection.git
 cd CarAndLaneDetection
-Create a virtual environment (recommended):
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-Install dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
 ▶️ Usage
 Run Lane Detection
 bash
@@ -108,9 +97,9 @@ YOLO Object Detection
 👨‍💻 Authors
 Siddharth Kanojiya
 
-Link to Bootcamp notebook: https://colab.research.google.com/drive/1mASkzVB-dkqhLGeNVEBkYULWtgQRrBbu?usp=sharing
+Link to Notebook[Car and Lane Detection](https://drive.google.com/file/d/1BwXfpbCn5McQSLz85EAcJlt4th9kTXMu/view?usp=sharing)
 
-Link to Sample Notebook:https://drive.google.com/file/d/13Hw9XVC7IV1SNxn8aIYSqXGnjeteELVi/view?usp=sharing
+
 
 
 
